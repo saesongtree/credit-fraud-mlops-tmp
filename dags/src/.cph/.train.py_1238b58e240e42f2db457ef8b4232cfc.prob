@@ -1,0 +1,1 @@
+{"name":"Local: train","url":"c:\\credit-fraud-mlops\\src\\train.py","tests":[{"id":1758276069807,"input":"","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\credit-fraud-mlops\\src\\train.py","group":"local","local":true}

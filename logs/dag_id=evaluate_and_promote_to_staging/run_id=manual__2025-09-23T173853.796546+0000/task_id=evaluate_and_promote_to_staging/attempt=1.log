@@ -1,0 +1,12 @@
+{"timestamp":"2025-09-23T17:38:54.760514","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T17:38:54.761141","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/evaluate_and_promote_to_staging_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T17:38:56.006970Z","level":"info","event":"Staging 후보 평가 프로세스를 시작합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.096545Z","level":"info","event":"새로운 모델(Run ID: a2d5532db0bd42e784d92641ea5e715f) Combined Score: 1.3223","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.197602Z","level":"info","event":"현재 챔피언 모델(Version: 2) Combined Score: 1.0082","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.198079Z","level":"info","event":"🚀 새 모델이 챔피언보다 성능이 좋습니다! Staging 후보로 승격합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.252813Z","level":"error","event":"Registered model 'champion_model' already exists. Creating a new version of this model...","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.361106Z","level":"error","event":"2025/09/23 17:38:56 WARNING mlflow.tracking._model_registry.fluent: Run with id a2d5532db0bd42e784d92641ea5e715f has no artifacts at artifact path 'model', registering model based on models:/m-8be69bbe703e45d3862f222d4816fb40 instead","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.433040Z","level":"error","event":"2025/09/23 17:38:56 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: champion_model, version 3","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.434006Z","level":"error","event":"Created version '3' of model 'champion_model'.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.648642Z","level":"info","event":"✅ Staging 후보 등극! 모델: champion_model, 버전: 3","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T17:38:56.649201","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

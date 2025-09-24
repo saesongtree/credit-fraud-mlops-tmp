@@ -1,0 +1,50 @@
+name: CI Pipeline for Code Quality
+
+# 이 워크플로우가 언제 실행될지를 정의합니다.
+on:
+  # 'main' 브랜치에 코드가 push될 때마다 실행됩니다.
+  push:
+    branches: [ main ]
+  # 수동으로도 실행할 수 있도록 버튼을 추가합니다.
+  workflow_dispatch:
+
+# 실제 수행할 작업(job)들을 정의합니다.
+jobs:
+  # 'build'라는 이름의 작업을 정의합니다.
+  build:
+    # 이 작업이 실행될 가상 환경을 지정합니다 (최신 우분투).
+    runs-on: ubuntu-latest
+
+    # 작업의 단계(step)들을 순서대로 정의합니다.
+    steps:
+    # 1. GitHub 저장소의 코드를 가상 환경으로 가져옵니다. (필수)
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    # 2. Python 3.12 버전을 설치합니다.
+    - name: Set up Python 3.12
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+
+    # 3. pip을 업그레이드하고 requirements.txt로 라이브러리를 설치합니다.
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    # 4. flake8로 코드 스타일을 검사합니다.
+    - name: Lint with flake8
+      run: |
+        # flake8이 없다면 설치합니다.
+        pip install flake8
+        # --count 옵션은 에러 개수를 세고, --exit-zero는 경고만 있을 때는 통과시킵니다.
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # --exit-zero 옵션은 스타일 경고만으로는 CI를 실패시키지 않습니다.
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+
+    # 5. 스모크 테스트(Smoke Test) 실행
+    - name: Run Smoke Test
+      run: |
+        # 가장 가벼운 로지스틱 회귀 모델로 스크립트가 에러 없이 끝까지 실행되는지만 확인합니다.
+        python src/train.py --model_name logistic_regression

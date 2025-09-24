@@ -1,0 +1,7 @@
+{"timestamp":"2025-09-23T10:26:02.628156","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T10:26:02.630503","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/evaluate_and_promote_to_staging_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T10:26:03.790004Z","level":"info","event":"Staging 후보 평가 프로세스를 시작합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T10:26:03.894408Z","level":"info","event":"새로운 모델(Run ID: 71617ddfc57845ca9fd60cd3a4caaee2) Combined Score: 1.7324","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T10:26:04.009509Z","level":"info","event":"현재 챔피언 모델(Version: 3) Combined Score: 1.7324","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T10:26:04.010218Z","level":"info","event":"⚔️ 기존 챔피언 모델의 성능이 더 좋습니다. 변경사항 없음.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T10:26:04.009837","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

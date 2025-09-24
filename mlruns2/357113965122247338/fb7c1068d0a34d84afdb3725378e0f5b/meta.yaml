@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/credit-fraud-mlops/mlruns/357113965122247338/fb7c1068d0a34d84afdb3725378e0f5b/artifacts
+end_time: 1758276012572
+entry_point_name: ''
+experiment_id: '357113965122247338'
+lifecycle_stage: active
+run_id: fb7c1068d0a34d84afdb3725378e0f5b
+run_name: xgboost_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758276004139
+status: 3
+tags: []
+user_id: 2-09

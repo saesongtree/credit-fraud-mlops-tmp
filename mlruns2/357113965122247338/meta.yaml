@@ -1,0 +1,6 @@
+artifact_location: file:///C:/credit-fraud-mlops/mlruns/357113965122247338
+creation_time: 1758242961892
+experiment_id: '357113965122247338'
+last_update_time: 1758242961892
+lifecycle_stage: active
+name: credit_fraud_experiment

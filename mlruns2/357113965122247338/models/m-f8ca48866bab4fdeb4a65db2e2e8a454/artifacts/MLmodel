@@ -1,0 +1,22 @@
+artifact_path: file:///C:/credit-fraud-mlops/mlruns/357113965122247338/models/m-f8ca48866bab4fdeb4a65db2e2e8a454/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.5
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.2
+mlflow_version: 3.3.2
+model_id: m-f8ca48866bab4fdeb4a65db2e2e8a454
+model_size_bytes: 1074453
+model_uuid: m-f8ca48866bab4fdeb4a65db2e2e8a454
+prompts: null
+run_id: 9da985df6c5e4ae2a0c03a47cb8aa4c6
+utc_time_created: '2025-09-19 02:41:24.353181'

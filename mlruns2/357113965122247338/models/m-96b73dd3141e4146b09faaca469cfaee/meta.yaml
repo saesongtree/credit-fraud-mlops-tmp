@@ -1,0 +1,10 @@
+artifact_location: file:///C:/credit-fraud-mlops/mlruns/357113965122247338/models/m-96b73dd3141e4146b09faaca469cfaee/artifacts
+creation_timestamp: 1758275635227
+experiment_id: '357113965122247338'
+last_updated_timestamp: 1758275638828
+model_id: m-96b73dd3141e4146b09faaca469cfaee
+model_type: ''
+name: model
+source_run_id: 1922221ef844478baaf8cbade05db6c1
+status: 2
+status_message: null

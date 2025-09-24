@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/credit-fraud-mlops/mlruns/357113965122247338/2692f7b8a37a416685d25c6ab871f5e6/artifacts
+end_time: 1758607516818
+entry_point_name: ''
+experiment_id: '357113965122247338'
+lifecycle_stage: active
+run_id: 2692f7b8a37a416685d25c6ab871f5e6
+run_name: lgbm_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758607481585
+status: 4
+tags: []
+user_id: airflow

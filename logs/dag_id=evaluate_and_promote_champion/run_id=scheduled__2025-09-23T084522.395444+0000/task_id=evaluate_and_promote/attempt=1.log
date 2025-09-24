@@ -1,0 +1,22 @@
+{"timestamp":"2025-09-23T08:45:23.628410","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T08:45:23.629283","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/evaluate_and_promote_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T08:45:24.470753Z","level":"info","event":"챔피언 평가 및 승격 프로세스를 시작합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.566034Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.566637Z","level":"info","event":"새로운 모델(Run ID: ae5072857f5b41f9a1d4a9c90396cafb)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.567122Z","level":"info","event":"  - F1-Score: 0.8286","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.567558Z","level":"info","event":"  - AUPRC: 0.8824","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.568029Z","level":"info","event":"  - Combined Score: 1.7110","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.568397Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.678265Z","level":"info","event":"현재 챔피언 모델(Version: 1)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.678893Z","level":"info","event":"  - F1-Score: 0.1109","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.679265Z","level":"info","event":"  - AUPRC: 0.7249","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.679623Z","level":"info","event":"  - Combined Score: 0.8358","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.680014Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.680436Z","level":"info","event":"🚀 새로운 모델의 성능이 더 좋습니다! (새로운 점수: 1.7110 > 기존 점수: 0.8358)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.680743Z","level":"info","event":"챔피언을 교체합니다...","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.745371Z","level":"error","event":"Registered model 'champion_model' already exists. Creating a new version of this model...","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.879505Z","level":"error","event":"2025/09/23 08:45:24 WARNING mlflow.tracking._model_registry.fluent: Run with id ae5072857f5b41f9a1d4a9c90396cafb has no artifacts at artifact path 'model', registering model based on models:/m-70a0910d38e84f71b37837e2e7648131 instead","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.945366Z","level":"error","event":"2025/09/23 08:45:24 INFO mlflow.store.model_registry.abstract_store: Waiting up to 300 seconds for model version to finish creation. Model name: champion_model, version 2","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T08:45:24.946751Z","level":"error","event":"Created version '2' of model 'champion_model'.","chan":"stderr","logger":"task"}
+{"timestamp":"2025-09-23T08:45:25.167948Z","level":"info","event":"✅ 새로운 챔피언 등극! 모델: champion_model, 버전: 2","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:45:25.168453","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

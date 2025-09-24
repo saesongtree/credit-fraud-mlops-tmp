@@ -1,0 +1,19 @@
+# Airflow & MLflow log files
+logs/
+mlruns/
+
+# Data files
+data/
+
+# Python cache & virtual environment
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Git folder
+.git/
+
+# IDE config
+.idea/
+.vscode/

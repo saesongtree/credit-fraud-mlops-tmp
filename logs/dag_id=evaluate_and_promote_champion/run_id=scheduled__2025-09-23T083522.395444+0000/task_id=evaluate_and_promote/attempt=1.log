@@ -1,0 +1,17 @@
+{"timestamp":"2025-09-23T08:35:43.025360","level":"info","event":"DAG bundles loaded: dags-folder","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-09-23T08:35:43.025939","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/evaluate_and_promote_dag.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-09-23T08:35:43.944311Z","level":"info","event":"챔피언 평가 및 승격 프로세스를 시작합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.045406Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.045935Z","level":"info","event":"새로운 모델(Run ID: c8805586fc394ed3989e916954774f9f)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.046311Z","level":"info","event":"  - F1-Score: 0.1109","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.046640Z","level":"info","event":"  - AUPRC: 0.7249","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.047021Z","level":"info","event":"  - Combined Score: 0.8358","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.047409Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.140040Z","level":"info","event":"현재 챔피언 모델(Version: 1)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.140557Z","level":"info","event":"  - F1-Score: 0.1109","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.140866Z","level":"info","event":"  - AUPRC: 0.7249","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.141167Z","level":"info","event":"  - Combined Score: 0.8358","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.141531Z","level":"info","event":"----------------------------------------","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.141876Z","level":"info","event":"⚔️ 기존 챔피언 모델의 성능이 더 좋거나 같습니다. (새로운 점수: 0.8358 <= 기존 점수: 0.8358)","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.142220Z","level":"info","event":"변경사항 없이 현재 챔피언을 유지합니다.","chan":"stdout","logger":"task"}
+{"timestamp":"2025-09-23T08:35:44.140500","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}

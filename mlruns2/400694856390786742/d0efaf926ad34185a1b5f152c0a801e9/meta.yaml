@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/credit-fraud-mlops/mlruns/400694856390786742/d0efaf926ad34185a1b5f152c0a801e9/artifacts
+deleted_time: 1758155282823
+end_time: 1758154299399
+entry_point_name: ''
+experiment_id: '400694856390786742'
+lifecycle_stage: deleted
+run_id: d0efaf926ad34185a1b5f152c0a801e9
+run_name: suave-swan-872
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1758154280744
+status: 3
+tags: []
+user_id: 2-09
